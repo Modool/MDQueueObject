@@ -1,29 +1,29 @@
 //
-//  MDQueuObjectTests.m
-//  MDQueuObjectTests
+//  MDQueueObjectTests.m
+//  MDQueueObjectTests
 //
 //  Created by Jave on 2017/12/15.
 //  Copyright © 2017年 markejave. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "MDQueuObject.h"
+#import "MDQueueObject.h"
 
-@interface MDQueuObjectTests : XCTestCase
+@interface MDQueueObjectTests : XCTestCase
 
-@property (nonatomic, strong, readonly) MDQueuObject *queueObject;
+@property (nonatomic, strong, readonly) MDQueueObject *queueObject;
 
-@property (nonatomic, strong, readonly) MDQueuObject *namedQueueObject;
+@property (nonatomic, strong, readonly) MDQueueObject *namedQueueObject;
 
 @end
 
-@implementation MDQueuObjectTests
+@implementation MDQueueObjectTests
 
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    _queueObject = [[MDQueuObject alloc] init];
-    _namedQueueObject = [[MDQueuObject alloc] initWithName:@"Test"];
+    _queueObject = [[MDQueueObject alloc] init];
+    _namedQueueObject = [[MDQueueObject alloc] initWithName:@"Test"];
 }
 
 - (void)tearDown {

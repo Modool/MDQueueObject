@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "083A34601FE42646002554DE"
-               BuildableName = "MDQueuObject.framework"
-               BlueprintName = "MDQueuObject"
-               ReferencedContainer = "container:MDQueuObject.xcodeproj">
+               BuildableName = "MDQueueObject.framework"
+               BlueprintName = "MDQueueObject"
+               ReferencedContainer = "container:MDQueueObject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "083A34691FE42646002554DE"
-               BuildableName = "MDQueuObjectTests.xctest"
-               BlueprintName = "MDQueuObjectTests"
-               ReferencedContainer = "container:MDQueuObject.xcodeproj">
+               BuildableName = "MDQueueObjectTests.xctest"
+               BlueprintName = "MDQueueObjectTests"
+               ReferencedContainer = "container:MDQueueObject.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "083A34601FE42646002554DE"
-            BuildableName = "MDQueuObject.framework"
-            BlueprintName = "MDQueuObject"
-            ReferencedContainer = "container:MDQueuObject.xcodeproj">
+            BuildableName = "MDQueueObject.framework"
+            BlueprintName = "MDQueueObject"
+            ReferencedContainer = "container:MDQueueObject.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "083A34601FE42646002554DE"
-            BuildableName = "MDQueuObject.framework"
-            BlueprintName = "MDQueuObject"
-            ReferencedContainer = "container:MDQueuObject.xcodeproj">
+            BuildableName = "MDQueueObject.framework"
+            BlueprintName = "MDQueueObject"
+            ReferencedContainer = "container:MDQueueObject.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "083A34601FE42646002554DE"
-            BuildableName = "MDQueuObject.framework"
-            BlueprintName = "MDQueuObject"
-            ReferencedContainer = "container:MDQueuObject.xcodeproj">
+            BuildableName = "MDQueueObject.framework"
+            BlueprintName = "MDQueueObject"
+            ReferencedContainer = "container:MDQueueObject.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

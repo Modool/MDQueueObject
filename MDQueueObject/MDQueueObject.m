@@ -1,32 +1,32 @@
 //
-//  MDQueuObject.h
-//  MDQueuObject
+//  MDQueueObject.h
+//  MDQueueObject
 //
 //  Created by Jave on 2017/12/15.
 //  Copyright © 2017年 markejave. All rights reserved.
 //
 
-#import "MDQueuObject.h"
+#import "MDQueueObject.h"
 
-NSString * const MDQueuObjectDomainPrefix = @"com.modool.queue.object#";
+NSString * const MDQueueObjectDomainPrefix = @"com.modool.queue.object#";
 
-@interface MDQueuObject ()
+@interface MDQueueObject ()
 
 @property (nonatomic, strong) dispatch_queue_t queue;
 @property (nonatomic, assign) void *queueTag;
 
 @end
 
-@implementation MDQueuObject
+@implementation MDQueueObject
 
 - (instancetype)init {
-    return [self initWithName:[NSString stringWithFormat:@"%@%lu", MDQueuObjectDomainPrefix, (unsigned long)self]];
+    return [self initWithName:[NSString stringWithFormat:@"%@%lu", MDQueueObjectDomainPrefix, (unsigned long)self]];
 }
 
 - (instancetype)initWithName:(NSString *)name {
     if (self = [super init]) {
         self.queueTag = &_queueTag;
-        self.queue = dispatch_queue_create([[MDQueuObjectDomainPrefix stringByAppendingString:name] UTF8String], NULL);
+        self.queue = dispatch_queue_create([[MDQueueObjectDomainPrefix stringByAppendingString:name] UTF8String], NULL);
         dispatch_queue_set_specific([self queue], _queueTag, _queueTag, NULL);
     }
     return self;
