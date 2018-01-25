@@ -18,7 +18,11 @@ FOUNDATION_EXPORT const unsigned char MDQueueObjectVersionString[];
 
 #import <Foundation/Foundation.h>
 
+FOUNDATION_EXTERN NSString * const MDQueueObjectDomainPrefix;
+
 @interface MDQueueObject : NSObject
+
+@property (nonatomic, copy, readonly) NSString *name;
 
 @property (nonatomic, strong, readonly) dispatch_queue_t queue;
 

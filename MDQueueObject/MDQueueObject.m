@@ -12,7 +12,10 @@ NSString * const MDQueueObjectDomainPrefix = @"com.modool.queue.object#";
 
 @interface MDQueueObject ()
 
+@property (nonatomic, copy) NSString *name;
+
 @property (nonatomic, strong) dispatch_queue_t queue;
+
 @property (nonatomic, assign) void *queueTag;
 
 @end
@@ -25,8 +28,10 @@ NSString * const MDQueueObjectDomainPrefix = @"com.modool.queue.object#";
 
 - (instancetype)initWithName:(NSString *)name {
     if (self = [super init]) {
+        self.name = name;
         self.queueTag = &_queueTag;
         self.queue = dispatch_queue_create([[MDQueueObjectDomainPrefix stringByAppendingString:name] UTF8String], NULL);
+        
         dispatch_queue_set_specific([self queue], _queueTag, _queueTag, NULL);
     }
     return self;
