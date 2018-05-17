@@ -23,7 +23,7 @@ NSString * const MDQueueObjectDomainPrefix = @"com.modool.queue.object#";
 @implementation MDQueueObject
 
 - (instancetype)init {
-    return [self initWithName:[NSString stringWithFormat:@"%@.%@%lu", MDQueueObjectDomainPrefix, NSStringFromClass(self.class), (unsigned long)self]];
+    return [self initWithName:[NSString stringWithFormat:@"%@%@#%lu", MDQueueObjectDomainPrefix, NSStringFromClass(self.class), (unsigned long)self]];
 }
 
 - (instancetype)initWithName:(NSString *)name {
